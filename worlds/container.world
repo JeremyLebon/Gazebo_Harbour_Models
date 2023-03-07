@@ -1,0 +1,1254 @@
+<sdf version='1.7'>
+  <world name='default'>
+    <light name='sun' type='directional'>
+      <cast_shadows>1</cast_shadows>
+      <pose>0 0 10 0 -0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0.5 0.1 -0.9</direction>
+      <spot>
+        <inner_angle>0</inner_angle>
+        <outer_angle>0</outer_angle>
+        <falloff>0</falloff>
+      </spot>
+    </light>
+    <model name='ground_plane'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Grey</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <gravity>0 0 -9.8</gravity>
+    <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
+    <atmosphere type='adiabatic'/>
+    <physics type='ode'>
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+    </physics>
+    <scene>
+      <ambient>0.4 0.4 0.4 1</ambient>
+      <background>0.7 0.7 0.7 1</background>
+      <shadows>1</shadows>
+    </scene>
+    <audio>
+      <device>default</device>
+    </audio>
+    <wind/>
+    <spherical_coordinates>
+      <surface_model>EARTH_WGS84</surface_model>
+      <latitude_deg>0</latitude_deg>
+      <longitude_deg>0</longitude_deg>
+      <elevation>0</elevation>
+      <heading_deg>0</heading_deg>
+    </spherical_coordinates>
+    <state world_name='default'>
+      <sim_time>221 850000000</sim_time>
+      <real_time>78 541706917</real_time>
+      <wall_time>1675362232 375756104</wall_time>
+      <iterations>76894</iterations>
+      <model name='container20'>
+        <pose>-4.86576 22.8801 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='chassis'>
+          <pose>-4.86576 22.8801 0.1 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='container20_0'>
+        <pose>18.8228 22.0174 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='chassis'>
+          <pose>18.8228 22.0174 0.1 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='container20_1'>
+        <pose>26.5113 10.8056 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='chassis'>
+          <pose>26.5113 10.8056 0.1 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='container20_2'>
+        <pose>29.5284 28.174 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='chassis'>
+          <pose>29.5284 28.174 0.1 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='container20_3'>
+        <pose>-16.2669 14.2451 0 0 0 -1.61766</pose>
+        <scale>1 1 1</scale>
+        <link name='chassis'>
+          <pose>-16.2669 14.2451 0.1 0 0 -1.61766</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='container40'>
+        <pose>-6.34819 7.85071 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='chassis'>
+          <pose>-6.34819 7.85071 0.1 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='container40_0'>
+        <pose>5.24891 32.9631 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='chassis'>
+          <pose>5.24891 32.9631 0.1 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='ground_plane'>
+        <pose>0 0 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>0 0 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='pallet_truck'>
+        <pose>10.0027 15.7046 -8.4e-05 2e-06 -0.002972 1.56841</pose>
+        <scale>1 1 1</scale>
+        <link name='robot_base_footprint'>
+          <pose>10.0027 15.7046 -8.4e-05 2e-06 -0.002972 1.56841</pose>
+          <velocity>-3.6e-05 -0.000177 -0.001157 -0.001393 1.4e-05 -2.9e-05</velocity>
+          <acceleration>0.02122 -0.003213 -5.58388 0.028755 -0.358766 -0.168759</acceleration>
+          <wrench>3.18565 -0.48242 -838.286 0 -0 0</wrench>
+        </link>
+        <link name='robot_battery_case_link'>
+          <pose>10.0058 16.9999 0.717704 2e-06 -0.002972 1.56841</pose>
+          <velocity>9e-06 0.000982 -0.067827 -0.001333 8e-06 -3e-05</velocity>
+          <acceleration>0.021968 -0.08827 -9.49358 0.472771 -0.001447 -0.003135</acceleration>
+          <wrench>0.219705 -0.88279 -94.9453 0 -0 0</wrench>
+        </link>
+        <link name='robot_front_left_wheel_link'>
+          <pose>9.82661 17.3431 0.040784 2e-06 2e-06 1.56841</pose>
+          <velocity>1.3e-05 -8.4e-05 -0.003168 -0 1.4e-05 -2.9e-05</velocity>
+          <acceleration>0.024048 0.097057 -4.67871 3.1e-05 0.01291 -0.002516</acceleration>
+          <wrench>0.012024 0.048529 -2.33935 0 -0 0</wrench>
+        </link>
+        <link name='robot_front_right_wheel_link'>
+          <pose>10.1866 17.3422 0.040783 2e-06 2e-06 1.56841</pose>
+          <velocity>1.2e-05 -9.4e-05 -0.003174 0 1.3e-05 -2.9e-05</velocity>
+          <acceleration>0.022921 0.095977 -4.68374 2.4e-05 0.009996 -0.003198</acceleration>
+          <wrench>0.01146 0.047988 -2.34187 0 -0 0</wrench>
+        </link>
+        <link name='robot_front_wheel_link'>
+          <pose>10.006 17.0794 0.124996 -3.14155 1.54996 -1.57313</pose>
+          <velocity>1.3e-05 1e-06 -0.001407 -7e-06 0.000105 -2e-05</velocity>
+          <acceleration>0.030825 0.016564 -2.66632 1.19585 0.326285 -0.002356</acceleration>
+          <wrench>0.308253 0.16564 -26.6632 0 -0 0</wrench>
+        </link>
+        <link name='robot_left_fork_link'>
+          <pose>9.80376 16.5699 0.054423 -1e-06 -0.002972 1.56841</pose>
+          <velocity>9.9e-05 0.000103 -0.067322 -0.001397 0.000676 -2.3e-05</velocity>
+          <acceleration>0.017927 0.056476 -9.86918 0.024576 -0.482487 0.013767</acceleration>
+          <wrench>0.358548 1.12951 -197.384 0 -0 0</wrench>
+        </link>
+        <link name='robot_left_fork_wheel_link'>
+          <pose>9.8017 15.7049 0.03999 -1e-06 0.003179 1.56841</pose>
+          <velocity>-5.6e-05 -0.000155 -0.019492 0.004639 0.000767 -2.8e-05</velocity>
+          <acceleration>-0.023352 -0.028919 -38.2726 0.003812 1.33716 -0.002027</acceleration>
+          <wrench>-0.011676 -0.014459 -19.1363 0 -0 0</wrench>
+        </link>
+        <link name='robot_right_fork_link'>
+          <pose>10.2058 16.5689 0.054422 4e-06 -0.002972 1.56841</pose>
+          <velocity>-0.000111 9.6e-05 -0.06736 -0.001392 -0.000586 -3.8e-05</velocity>
+          <acceleration>0.016755 0.060995 -9.88382 -3.13608 -0.737177 3.12813</acceleration>
+          <wrench>0.335096 1.21991 -197.677 0 -0 0</wrench>
+        </link>
+        <link name='robot_right_fork_wheel_link'>
+          <pose>10.2037 15.704 0.03999 -3e-06 0.00106 1.56841</pose>
+          <velocity>-4.1e-05 -0.000132 -0.019666 0.004573 0.001168 0.000184</velocity>
+          <acceleration>0.003632 0.030654 -38.4571 -3.13604 1.19462 -2.76797</acceleration>
+          <wrench>0.001816 0.015327 -19.2286 0 -0 0</wrench>
+        </link>
+        <link name='robot_steer_link'>
+          <pose>10.006 17.0794 0.124999 -1e-06 -0.002971 1.56841</pose>
+          <velocity>9e-06 1e-06 -0.001995 -0.001137 0.000135 -2.1e-05</velocity>
+          <acceleration>0.026849 0.016903 -3.25528 0.616209 0.305536 -0.003598</acceleration>
+          <wrench>0.268493 0.169033 -32.5528 0 -0 0</wrench>
+        </link>
+      </model>
+      <light name='sun'>
+        <pose>0 0 10 0 -0 0</pose>
+      </light>
+    </state>
+    <gui fullscreen='0'>
+      <camera name='user_camera'>
+        <pose>125.617 34.9912 31.7654 0 0.259643 3.12819</pose>
+        <view_controller>orbit</view_controller>
+        <projection_type>perspective</projection_type>
+      </camera>
+    </gui>
+    <model name='pallet_truck'>
+      <link name='robot_base_footprint'>
+        <inertial>
+          <pose>0.509087 0 0.160357 0 -0 0</pose>
+          <mass>150.126</mass>
+          <inertia>
+            <ixx>6.8286</ixx>
+            <ixy>0</ixy>
+            <ixz>-18.3468</ixz>
+            <iyy>84.4553</iyy>
+            <iyz>0</iyz>
+            <izz>79.9111</izz>
+          </inertia>
+        </inertial>
+        <collision name='robot_base_footprint_fixed_joint_lump__robot__lidar2D_1_link_collision'>
+          <pose>1.7 0 0.19 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <length>0.02</length>
+              <radius>0.0508</radius>
+            </cylinder>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <collision name='robot_base_footprint_fixed_joint_lump__robot_front_case_link_collision_1'>
+          <pose>1.2982 0 0.711 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>file:///root/home/dev_ws/install/robot_sim_toolbox/share/robot_sim_toolbox/urdf/robots/pallet_truck/models/front_case.stl</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='robot_base_footprint_fixed_joint_lump__robot__lidar2D_1_link_visual'>
+          <pose>1.7 0 0.19 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <length>0.02</length>
+              <radius>0.0508</radius>
+            </cylinder>
+          </geometry>
+        </visual>
+        <visual name='robot_base_footprint_fixed_joint_lump__robot_front_case_link_visual_1'>
+          <pose>1.2982 0 0.711 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>file:///root/home/dev_ws/install/robot_sim_toolbox/share/robot_sim_toolbox/urdf/robots/pallet_truck/models/front_case.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <sensor name='{name}_1' type='ray'>
+          <always_on>1</always_on>
+          <visualize>1</visualize>
+          <update_rate>10</update_rate>
+          <ray>
+            <scan>
+              <horizontal>
+                <samples>480</samples>
+                <resolution>1</resolution>
+                <min_angle>-1.57</min_angle>
+                <max_angle>1.57</max_angle>
+              </horizontal>
+              <vertical>
+                <samples>1</samples>
+                <min_angle>0</min_angle>
+                <max_angle>0</max_angle>
+              </vertical>
+            </scan>
+            <range>
+              <min>0.3</min>
+              <max>30</max>
+              <resolution>0.015</resolution>
+            </range>
+            <noise>
+              <type>gaussian</type>
+              <mean>0</mean>
+              <stddev>0.01</stddev>
+            </noise>
+          </ray>
+          <plugin name='robot__lidar2D_1_controller' filename='libgazebo_ros_ray_sensor.so'>
+            <ros>
+              <namespace>robot_</namespace>
+              <remapping>~/out:=/scan</remapping>
+            </ros>
+            <output_type>sensor_msgs/LaserScan</output_type>
+            <frame_name>robot__lidar2D_1_link</frame_name>
+          </plugin>
+          <pose>1.7 0 0.19 0 -0 0</pose>
+        </sensor>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='robot_elevator_joint' type='prismatic'>
+        <pose relative_to='robot_base_footprint'>1.2975 0 0.714 0 -0 0</pose>
+        <parent>robot_base_footprint</parent>
+        <child>robot_battery_case_link</child>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <limit>
+            <lower>0</lower>
+            <upper>5</upper>
+            <effort>100</effort>
+            <velocity>2</velocity>
+          </limit>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='robot_battery_case_link'>
+        <pose relative_to='robot_elevator_joint'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>-0.200024 0 -0.350007 0 -0 0</pose>
+          <mass>10.001</mass>
+          <inertia>
+            <ixx>1000</ixx>
+            <ixy>0</ixy>
+            <ixz>-1.67283e-05</ixz>
+            <iyy>1000</iyy>
+            <iyz>0</iyz>
+            <izz>1000</izz>
+          </inertia>
+        </inertial>
+        <collision name='robot_battery_case_link_collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>file:///root/home/dev_ws/install/robot_sim_toolbox/share/robot_sim_toolbox/urdf/robots/pallet_truck/models/battery_case.stl</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <collision name='robot_battery_case_link_fixed_joint_lump__robot_battery_case_protection_link_collision_1'>
+          <pose>-0.439 0 -0.42 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.001 0.52 0.5204</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='robot_battery_case_link_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>file:///root/home/dev_ws/install/robot_sim_toolbox/share/robot_sim_toolbox/urdf/robots/pallet_truck/models/battery_case.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='robot_left_fork_joint' type='prismatic'>
+        <pose relative_to='robot_battery_case_link'>-0.4325 0.201 -0.662 0 -0 0</pose>
+        <parent>robot_battery_case_link</parent>
+        <child>robot_left_fork_link</child>
+        <axis>
+          <xyz>1 0 0</xyz>
+          <limit>
+            <lower>0</lower>
+            <upper>0</upper>
+            <effort>1000</effort>
+            <velocity>1</velocity>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='robot_left_fork_link'>
+        <pose relative_to='robot_left_fork_joint'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>-0.58127 0 0.012941 0 -0 0</pose>
+          <mass>20</mass>
+          <inertia>
+            <ixx>0.0433633</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1.83978</iyy>
+            <iyz>0</iyz>
+            <izz>1.87858</izz>
+          </inertia>
+        </inertial>
+        <collision name='robot_left_fork_link_collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>file:///root/home/dev_ws/install/robot_sim_toolbox/share/robot_sim_toolbox/urdf/robots/pallet_truck/models/single_fork.stl</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='robot_left_fork_link_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>file:///root/home/dev_ws/install/robot_sim_toolbox/share/robot_sim_toolbox/urdf/robots/pallet_truck/models/single_fork.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='robot_right_fork_joint' type='prismatic'>
+        <pose relative_to='robot_battery_case_link'>-0.4325 -0.201 -0.662 0 -0 0</pose>
+        <parent>robot_battery_case_link</parent>
+        <child>robot_right_fork_link</child>
+        <axis>
+          <xyz>1 0 0</xyz>
+          <limit>
+            <lower>0</lower>
+            <upper>0</upper>
+            <effort>1000</effort>
+            <velocity>1</velocity>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='robot_right_fork_link'>
+        <pose relative_to='robot_right_fork_joint'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>-0.58127 0 0.012941 0 -0 0</pose>
+          <mass>20</mass>
+          <inertia>
+            <ixx>0.0433633</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1.83978</iyy>
+            <iyz>0</iyz>
+            <izz>1.87858</izz>
+          </inertia>
+        </inertial>
+        <collision name='robot_right_fork_link_collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>file:///root/home/dev_ws/install/robot_sim_toolbox/share/robot_sim_toolbox/urdf/robots/pallet_truck/models/single_fork.stl</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='robot_right_fork_link_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>file:///root/home/dev_ws/install/robot_sim_toolbox/share/robot_sim_toolbox/urdf/robots/pallet_truck/models/single_fork.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='robot_front_left_wheel_joint' type='revolute'>
+        <pose relative_to='robot_base_footprint'>1.6382 0.18 0.036 0 -0 0</pose>
+        <parent>robot_base_footprint</parent>
+        <child>robot_front_left_wheel_link</child>
+        <axis>
+          <xyz>0 1 0</xyz>
+          <limit>
+            <effort>100</effort>
+            <velocity>100</velocity>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='robot_front_left_wheel_link'>
+        <pose relative_to='robot_front_left_wheel_joint'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>0.5</mass>
+          <inertia>
+            <ixx>0.00064</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.00064</iyy>
+            <iyz>0</iyz>
+            <izz>0.00064</izz>
+          </inertia>
+        </inertial>
+        <collision name='robot_front_left_wheel_link_collision'>
+          <pose>0 0 0 1.5708 -0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>0.04</radius>
+            </sphere>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>0</mu>
+                <mu2>0</mu2>
+                <fdir1>1 0 0</fdir1>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='robot_front_left_wheel_link_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>0.04</radius>
+            </sphere>
+          </geometry>
+        </visual>
+        <gravity>1</gravity>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='robot_front_right_wheel_joint' type='revolute'>
+        <pose relative_to='robot_base_footprint'>1.6382 -0.18 0.036 0 -0 0</pose>
+        <parent>robot_base_footprint</parent>
+        <child>robot_front_right_wheel_link</child>
+        <axis>
+          <xyz>0 1 0</xyz>
+          <limit>
+            <effort>100</effort>
+            <velocity>100</velocity>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='robot_front_right_wheel_link'>
+        <pose relative_to='robot_front_right_wheel_joint'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>0.5</mass>
+          <inertia>
+            <ixx>0.00064</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.00064</iyy>
+            <iyz>0</iyz>
+            <izz>0.00064</izz>
+          </inertia>
+        </inertial>
+        <collision name='robot_front_right_wheel_link_collision'>
+          <pose>0 0 0 1.5708 -0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>0.04</radius>
+            </sphere>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>0</mu>
+                <mu2>0</mu2>
+                <fdir1>1 0 0</fdir1>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='robot_front_right_wheel_link_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>0.04</radius>
+            </sphere>
+          </geometry>
+        </visual>
+        <gravity>1</gravity>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='robot_steer_joint' type='revolute'>
+        <pose relative_to='robot_base_footprint'>1.3752 0 0.121 0 -0 0</pose>
+        <parent>robot_base_footprint</parent>
+        <child>robot_steer_link</child>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <limit>
+            <lower>-1.56</lower>
+            <upper>1.56</upper>
+            <effort>9999</effort>
+            <velocity>20</velocity>
+          </limit>
+          <dynamics>
+            <damping>1000</damping>
+            <friction>1000</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='robot_steer_link'>
+        <pose relative_to='robot_steer_joint'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>10</mass>
+          <inertia>
+            <ixx>0.0374033</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.05</iyy>
+            <iyz>0</iyz>
+            <izz>0.0374033</izz>
+          </inertia>
+        </inertial>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='robot_traction_joint' type='revolute'>
+        <pose relative_to='robot_steer_link'>0 0 0 0 -0 0</pose>
+        <parent>robot_steer_link</parent>
+        <child>robot_front_wheel_link</child>
+        <axis>
+          <xyz>0 1 0</xyz>
+          <limit>
+            <effort>1000</effort>
+            <velocity>100</velocity>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='robot_front_wheel_link'>
+        <pose relative_to='robot_traction_joint'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>6.3e-05 0 0.000465 0 -0 0</pose>
+          <mass>10</mass>
+          <inertia>
+            <ixx>0.0455433</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.07442</iyy>
+            <iyz>0</iyz>
+            <izz>0.0455433</izz>
+          </inertia>
+        </inertial>
+        <collision name='robot_front_wheel_link_collision'>
+          <pose>0 0 0 1.5708 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <length>0.1</length>
+              <radius>0.125</radius>
+            </cylinder>
+          </geometry>
+          <surface>
+            <contact>
+              <ode>
+                <kp>1e+08</kp>
+                <kd>10</kd>
+              </ode>
+            </contact>
+            <friction>
+              <ode>
+                <mu>0.2</mu>
+                <mu2>0.2</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='robot_front_wheel_link_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>file:///root/home/dev_ws/install/robot_sim_toolbox/share/robot_sim_toolbox/urdf/robots/pallet_truck/models/pallet_truck_wheel.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='robot_left_fork_wheel_joint' type='revolute'>
+        <pose relative_to='robot_base_footprint'>0 0.201 0.04 0 -0 0</pose>
+        <parent>robot_base_footprint</parent>
+        <child>robot_left_fork_wheel_link</child>
+        <axis>
+          <xyz>0 1 0</xyz>
+          <limit>
+            <effort>100</effort>
+            <velocity>100</velocity>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='robot_left_fork_wheel_link'>
+        <pose relative_to='robot_left_fork_wheel_joint'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>0.5</mass>
+          <inertia>
+            <ixx>0.000466667</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.0004</iyy>
+            <iyz>0</iyz>
+            <izz>0.000466667</izz>
+          </inertia>
+        </inertial>
+        <collision name='robot_left_fork_wheel_link_collision'>
+          <pose>0 0 0 1.5708 -0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>0.04</radius>
+            </sphere>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>0.5</mu>
+                <mu2>0.5</mu2>
+                <fdir1>1 0 0</fdir1>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='robot_left_fork_wheel_link_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>0.04</radius>
+            </sphere>
+          </geometry>
+        </visual>
+        <gravity>1</gravity>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='robot_right_fork_wheel_joint' type='revolute'>
+        <pose relative_to='robot_base_footprint'>0 -0.201 0.04 0 -0 0</pose>
+        <parent>robot_base_footprint</parent>
+        <child>robot_right_fork_wheel_link</child>
+        <axis>
+          <xyz>0 1 0</xyz>
+          <limit>
+            <effort>100</effort>
+            <velocity>100</velocity>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='robot_right_fork_wheel_link'>
+        <pose relative_to='robot_right_fork_wheel_joint'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>0.5</mass>
+          <inertia>
+            <ixx>0.000466667</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.0004</iyy>
+            <iyz>0</iyz>
+            <izz>0.000466667</izz>
+          </inertia>
+        </inertial>
+        <collision name='robot_right_fork_wheel_link_collision'>
+          <pose>0 0 0 1.5708 -0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>0.04</radius>
+            </sphere>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>0.5</mu>
+                <mu2>0.5</mu2>
+                <fdir1>1 0 0</fdir1>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='robot_right_fork_wheel_link_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>0.04</radius>
+            </sphere>
+          </geometry>
+        </visual>
+        <gravity>1</gravity>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>0</static>
+      <plugin name='gazebo_ros2_control' filename='libgazebo_ros2_control.so'>
+        <parameters>/root/home/dev_ws/install/robot_sim_toolbox/share/robot_sim_toolbox/urdf/robots/pallet_truck/config/all_controllers.yaml</parameters>
+      </plugin>
+      <pose>10 10 0 0 -0 1.57</pose>
+    </model>
+    <model name='container20'>
+      <static>1</static>
+      <link name='chassis'>
+        <pose>0 0 0.1 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://container20/CONTAINER20.dae</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://container20/CONTAINER20.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>-4.86576 22.8801 0 0 -0 0</pose>
+    </model>
+    <model name='container40'>
+      <static>1</static>
+      <link name='chassis'>
+        <pose>0 0 0.1 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://container40/CONTAINER40.dae</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://container40/CONTAINER40.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>-6.34819 7.85071 0 0 -0 0</pose>
+    </model>
+    <model name='container20_0'>
+      <static>1</static>
+      <link name='chassis'>
+        <pose>0 0 0.1 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://container20/CONTAINER20.dae</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://container20/CONTAINER20.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>18.8228 22.0174 0 0 -0 0</pose>
+    </model>
+    <model name='container40_0'>
+      <static>1</static>
+      <link name='chassis'>
+        <pose>0 0 0.1 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://container40/CONTAINER40.dae</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://container40/CONTAINER40.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>5.24891 32.9631 0 0 -0 0</pose>
+    </model>
+    <model name='container20_1'>
+      <static>1</static>
+      <link name='chassis'>
+        <pose>0 0 0.1 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://container20/CONTAINER20.dae</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://container20/CONTAINER20.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>26.5113 10.8056 0 0 -0 0</pose>
+    </model>
+    <model name='container20_2'>
+      <static>1</static>
+      <link name='chassis'>
+        <pose>0 0 0.1 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://container20/CONTAINER20.dae</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://container20/CONTAINER20.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>29.5284 28.174 0 0 -0 0</pose>
+    </model>
+    <model name='container20_3'>
+      <static>1</static>
+      <link name='chassis'>
+        <pose>0 0 0.1 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://container20/CONTAINER20.dae</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://container20/CONTAINER20.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>-16.2669 14.2451 0 0 -0 0</pose>
+    </model>
+  </world>
+</sdf>
